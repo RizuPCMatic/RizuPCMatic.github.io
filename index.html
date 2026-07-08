@@ -1,0 +1,2551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How to Identify Security Scams and Stay Protected</title>
+
+<meta name="description" content="Learn how to identify online security scams, recognize suspicious activities, and follow smart cybersecurity practices to stay protected.">
+
+<meta name="keywords" content="security scam awareness, online safety, cybersecurity tips, scam prevention, digital protection">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+html{
+scroll-behavior:smooth;
+}
+
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:#090909;
+color:#ffffff;
+overflow-x:hidden;
+
+}
+
+
+/* GOLD LIGHT EFFECT */
+
+body:before{
+
+content:"";
+position:fixed;
+width:650px;
+height:650px;
+background:#d4af37;
+top:-250px;
+left:-250px;
+filter:blur(220px);
+opacity:.12;
+z-index:-2;
+
+}
+
+
+body:after{
+
+content:"";
+position:fixed;
+width:650px;
+height:650px;
+background:#ffb703;
+bottom:-250px;
+right:-250px;
+filter:blur(220px);
+opacity:.10;
+z-index:-2;
+
+}
+
+
+
+.container{
+
+width:92%;
+max-width:1250px;
+margin:auto;
+
+}
+
+
+
+
+/* HEADER */
+
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(9,9,9,.90);
+backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(212,175,55,.20);
+z-index:999;
+
+}
+
+
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:22px 0;
+
+}
+
+
+
+.logo{
+
+font-family:'Cinzel',serif;
+font-size:32px;
+font-weight:800;
+color:#d4af37;
+
+}
+
+
+
+.logo span{
+
+color:#ffffff;
+
+}
+
+
+
+nav{
+
+display:flex;
+gap:35px;
+
+}
+
+
+
+nav a{
+
+text-decoration:none;
+color:#e5e7eb;
+font-weight:600;
+transition:.3s;
+
+}
+
+
+
+nav a:hover{
+
+color:#d4af37;
+
+}
+
+
+
+
+.support-btn{
+
+padding:15px 38px;
+background:linear-gradient(135deg,#d4af37,#ffcc66);
+color:#111111;
+font-weight:800;
+border-radius:50px;
+text-decoration:none;
+box-shadow:0 15px 40px rgba(212,175,55,.25);
+transition:.3s;
+
+}
+
+
+
+.support-btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+padding:190px 0 120px;
+
+}
+
+
+
+
+.hero-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(390px,1fr));
+gap:70px;
+align-items:center;
+
+}
+
+
+
+.badge{
+
+display:inline-block;
+padding:10px 25px;
+border-radius:50px;
+background:rgba(212,175,55,.12);
+border:1px solid rgba(212,175,55,.35);
+color:#d4af37;
+font-weight:700;
+margin-bottom:25px;
+
+}
+
+
+
+
+.hero h1{
+
+font-family:'Cinzel',serif;
+font-size:60px;
+line-height:1.2;
+margin-bottom:25px;
+
+}
+
+
+
+
+.hero p{
+
+font-size:18px;
+line-height:2;
+color:#cbd5e1;
+margin-bottom:35px;
+
+}
+
+
+
+
+
+.buttons{
+
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+
+
+
+.primary-btn{
+
+padding:18px 45px;
+background:linear-gradient(135deg,#d4af37,#ffcc66);
+color:#111;
+font-weight:800;
+border-radius:50px;
+text-decoration:none;
+
+}
+
+
+
+
+.secondary-btn{
+
+padding:18px 45px;
+border:2px solid #d4af37;
+color:#d4af37;
+font-weight:700;
+border-radius:50px;
+text-decoration:none;
+
+}
+
+
+
+
+
+
+/* SECURITY BOX */
+
+
+.security-box{
+
+background:linear-gradient(
+145deg,
+rgba(255,255,255,.08),
+rgba(255,255,255,.02)
+);
+
+border:1px solid rgba(212,175,55,.25);
+
+border-radius:35px;
+
+padding:45px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.5);
+
+}
+
+
+
+.security-box h2{
+
+font-family:'Cinzel',serif;
+color:#d4af37;
+margin-bottom:25px;
+
+}
+
+
+
+.security-box ul{
+
+list-style:none;
+
+}
+
+
+
+.security-box li{
+
+padding:16px 0;
+border-bottom:1px solid rgba(255,255,255,.10);
+color:#e5e7eb;
+
+}
+
+
+
+.security-box li:last-child{
+
+border:none;
+
+}
+
+
+
+
+.warning{
+
+margin-top:25px;
+padding:20px;
+background:rgba(212,175,55,.10);
+border-left:4px solid #d4af37;
+border-radius:15px;
+line-height:1.8;
+
+}
+
+
+
+
+@media(max-width:900px){
+
+
+nav{
+
+display:none;
+
+}
+
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.hero{
+
+padding-top:150px;
+
+}
+
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+
+.primary-btn,
+.secondary-btn{
+
+text-align:center;
+
+}
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="container">
+
+
+<div class="navbar">
+
+
+
+<div class="logo">
+
+Cyber<span>Shield</span>
+
+</div>
+
+
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#">Awareness</a>
+
+<a href="#">Protection</a>
+
+<a href="#">Tips</a>
+
+<a href="#">Contact</a>
+
+</nav>
+
+
+
+
+<a href="https://getchatsupport.net/" target="_blank" class="support-btn">
+
+Support
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+
+
+<section class="hero">
+
+
+<div class="container">
+
+
+<div class="hero-grid">
+
+
+
+<!-- CONTINUE PART 1A-2 -->
+<!-- ==========================================
+PART 1A-2
+Continue below Part 1A-1
+========================================== -->
+
+
+<div>
+
+
+<span class="badge">
+⚠️ SCAM AWARENESS GUIDE
+</span>
+
+
+
+<h1>
+How To Recognize Online Security Scams
+</h1>
+
+
+
+<p>
+Online scams can appear in many forms, including fake messages,
+suspicious websites, misleading offers, and attempts to collect
+personal information. Learning common warning signs can help you
+make safer decisions and protect your digital identity.
+</p>
+
+
+
+
+<div class="buttons">
+
+
+<a href="https://getchatsupport.net/"
+target="_blank"
+class="primary-btn">
+
+Get Support
+
+</a>
+
+
+
+
+<a href="#features"
+class="secondary-btn">
+
+Learn Safety Tips
+
+</a>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="security-box">
+
+
+<h2>
+Scam Prevention Checklist
+</h2>
+
+
+
+<ul>
+
+
+<li>
+✔ Verify websites before entering personal details.
+</li>
+
+
+<li>
+✔ Avoid unexpected emails and suspicious links.
+</li>
+
+
+<li>
+✔ Never share passwords or sensitive information.
+</li>
+
+
+<li>
+✔ Check software sources before downloading.
+</li>
+
+
+<li>
+✔ Be careful with urgent security messages.
+</li>
+
+
+<li>
+✔ Use strong passwords and account protection.
+</li>
+
+
+<li>
+✔ Review privacy settings regularly.
+</li>
+
+
+<li>
+✔ Keep devices and applications updated.
+</li>
+
+
+
+</ul>
+
+
+
+
+<div class="warning">
+
+
+<strong>
+Important Safety Reminder:
+</strong>
+
+<br><br>
+
+
+Always verify information through trusted sources.
+Scammers often use urgency, fear, or unrealistic promises
+to influence decisions. Staying informed is one of the
+best ways to improve online safety.
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ==========================================
+FEATURE SECTION
+========================================== -->
+
+
+<section id="features"
+style="padding:120px 0;background:#111111;">
+
+
+
+<div class="container">
+
+
+
+<div style="
+text-align:center;
+margin-bottom:80px;">
+
+
+
+<span style="
+display:inline-block;
+padding:10px 25px;
+border-radius:50px;
+background:rgba(212,175,55,.12);
+border:1px solid rgba(212,175,55,.30);
+color:#d4af37;
+font-weight:700;">
+
+SCAM PROTECTION
+
+</span>
+
+
+
+
+
+<h2 style="
+font-family:'Cinzel',serif;
+font-size:52px;
+margin-top:25px;">
+
+Common Warning Signs To Watch
+
+</h2>
+
+
+
+
+<p style="
+max-width:850px;
+margin:25px auto;
+color:#cbd5e1;
+font-size:18px;
+line-height:2;">
+
+
+Understanding common scam techniques can help you identify
+potential risks before taking action online.
+
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:35px;">
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0d0d0d);
+padding:40px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<div style="font-size:55px;">
+🚨
+</div>
+
+
+
+<h3 style="
+color:#d4af37;
+margin:20px 0;">
+
+Urgent Messages
+
+</h3>
+
+
+
+<p style="
+color:#cbd5e1;
+line-height:1.9;">
+
+
+Be cautious of messages that create pressure
+or demand immediate action.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0d0d0d);
+padding:40px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<div style="font-size:55px;">
+🔗
+</div>
+
+
+
+<h3 style="
+color:#d4af37;
+margin:20px 0;">
+
+Suspicious Links
+
+</h3>
+
+
+
+<p style="
+color:#cbd5e1;
+line-height:1.9;">
+
+
+Avoid clicking unknown links that may lead
+to unsafe websites or fake pages.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0d0d0d);
+padding:40px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<div style="font-size:55px;">
+🔐
+</div>
+
+
+
+<h3 style="
+color:#d4af37;
+margin:20px 0;">
+
+Information Requests
+
+</h3>
+
+
+
+<p style="
+color:#cbd5e1;
+line-height:1.9;">
+
+
+Never provide passwords or private details
+to unverified sources.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0d0d0d);
+padding:40px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<div style="font-size:55px;">
+💻
+</div>
+
+
+
+<h3 style="
+color:#d4af37;
+margin:20px 0;">
+
+Unknown Downloads
+
+</h3>
+
+
+
+<p style="
+color:#cbd5e1;
+line-height:1.9;">
+
+
+Install software only from trusted sources
+and review permissions carefully.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- ========= PART 1B STARTS HERE ========= -->
+<!-- ==========================================
+PART 1B : ABOUT • PROTECTION METHODS • BENEFITS
+Paste below Part 1A-2
+========================================== -->
+
+
+<section style="padding:120px 0;background:#090909;">
+
+
+<div class="container">
+
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+gap:70px;
+align-items:center;">
+
+
+
+<!-- IMAGE -->
+
+<div>
+
+
+<img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80"
+alt="Cyber Security Awareness"
+style="
+width:100%;
+border-radius:35px;
+border:1px solid rgba(212,175,55,.25);
+box-shadow:0 30px 70px rgba(0,0,0,.55);">
+
+
+</div>
+
+
+
+
+
+
+<!-- TEXT -->
+
+<div>
+
+
+<span style="
+display:inline-block;
+padding:10px 25px;
+border-radius:50px;
+background:rgba(212,175,55,.12);
+border:1px solid rgba(212,175,55,.30);
+color:#d4af37;
+font-weight:700;">
+
+DIGITAL AWARENESS
+
+</span>
+
+
+
+
+
+<h2 style="
+font-family:'Cinzel',serif;
+font-size:50px;
+margin:25px 0;">
+
+Stay Alert Against Online Threats
+
+</h2>
+
+
+
+
+<p style="
+font-size:18px;
+line-height:2;
+color:#cbd5e1;
+margin-bottom:35px;">
+
+
+A strong cybersecurity approach starts with awareness.
+Understanding suspicious behavior, checking information carefully,
+and following safe online practices can help reduce digital risks.
+
+
+</p>
+
+
+
+
+
+
+<div style="
+display:flex;
+flex-direction:column;
+gap:25px;">
+
+
+
+
+
+<div style="
+display:flex;
+gap:18px;
+align-items:flex-start;">
+
+
+<div style="
+width:65px;
+height:65px;
+border-radius:20px;
+background:linear-gradient(135deg,#d4af37,#ffcc66);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+color:#111;">
+
+🛡
+
+</div>
+
+
+
+<div>
+
+
+<h3 style="
+color:#d4af37;
+margin-bottom:8px;">
+
+Verify Before Trusting
+
+</h3>
+
+
+
+<p style="
+color:#cbd5e1;
+line-height:1.8;">
+
+
+Check sources, websites, and messages before sharing
+information or making decisions.
+
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+display:flex;
+gap:18px;
+align-items:flex-start;">
+
+
+<div style="
+width:65px;
+height:65px;
+border-radius:20px;
+background:linear-gradient(135deg,#d4af37,#ffcc66);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+color:#111;">
+
+🔒
+
+</div>
+
+
+
+<div>
+
+
+<h3 style="
+color:#d4af37;
+margin-bottom:8px;">
+
+
+Protect Personal Data
+
+</h3>
+
+
+
+<p style="
+color:#cbd5e1;
+line-height:1.8;">
+
+
+Use secure passwords and avoid sharing sensitive details
+with unknown sources.
+
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+display:flex;
+gap:18px;
+align-items:flex-start;">
+
+
+<div style="
+width:65px;
+height:65px;
+border-radius:20px;
+background:linear-gradient(135deg,#d4af37,#ffcc66);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+color:#111;">
+
+⚡
+
+</div>
+
+
+
+<div>
+
+
+<h3 style="
+color:#d4af37;
+margin-bottom:8px;">
+
+Keep Security Updated
+
+</h3>
+
+
+
+<p style="
+color:#cbd5e1;
+line-height:1.8;">
+
+
+Regular updates and responsible browsing habits
+help improve digital safety.
+
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ==========================================
+BENEFITS SECTION
+========================================== -->
+
+
+<section style="
+padding:110px 0;
+background:#111111;">
+
+
+
+<div class="container">
+
+
+
+<div style="
+text-align:center;
+margin-bottom:75px;">
+
+
+
+<span style="
+display:inline-block;
+padding:10px 25px;
+border-radius:50px;
+background:rgba(212,175,55,.12);
+border:1px solid rgba(212,175,55,.30);
+color:#d4af37;
+font-weight:700;">
+
+SAFETY BENEFITS
+
+</span>
+
+
+
+
+
+
+<h2 style="
+font-family:'Cinzel',serif;
+font-size:52px;
+margin-top:25px;">
+
+Benefits Of Scam Awareness
+
+</h2>
+
+
+
+
+
+<p style="
+max-width:850px;
+margin:25px auto;
+font-size:18px;
+line-height:2;
+color:#cbd5e1;">
+
+
+Learning how online scams work helps you make smarter choices,
+protect your information, and improve your overall online experience.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:35px;">
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0b0b0b);
+padding:40px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<h3 style="color:#d4af37;">
+👁 Better Awareness
+</h3>
+
+
+
+<p style="
+margin-top:18px;
+color:#cbd5e1;
+line-height:1.9;">
+
+
+Recognize common warning signs and suspicious online activity.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0b0b0b);
+padding:40px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<h3 style="color:#d4af37;">
+🔐 Improved Privacy
+</h3>
+
+
+
+<p style="
+margin-top:18px;
+color:#cbd5e1;
+line-height:1.9;">
+
+
+Reduce unnecessary sharing of personal information online.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0b0b0b);
+padding:40px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<h3 style="color:#d4af37;">
+💻 Safer Devices
+</h3>
+
+
+
+<p style="
+margin-top:18px;
+color:#cbd5e1;
+line-height:1.9;">
+
+
+Use secure downloads and maintain updated devices.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0b0b0b);
+padding:40px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<h3 style="color:#d4af37;">
+📚 Smart Decisions
+</h3>
+
+
+
+<p style="
+margin-top:18px;
+color:#cbd5e1;
+line-height:1.9;">
+
+
+Make informed choices before trusting online offers.
+
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+<!-- ========= PART 2 STARTS HERE ========= -->
+<!-- ==========================================
+PART 2 : SCAM SAFETY STEPS • CHECKLIST • SUPPORT
+Paste below Part 1B
+========================================== -->
+
+
+<section style="
+padding:120px 0;
+background:#090909;">
+
+
+
+<div class="container">
+
+
+
+<div style="
+text-align:center;
+margin-bottom:80px;">
+
+
+
+<span style="
+display:inline-block;
+padding:10px 25px;
+border-radius:50px;
+background:rgba(212,175,55,.12);
+border:1px solid rgba(212,175,55,.30);
+color:#d4af37;
+font-weight:700;">
+
+PROTECTION GUIDE
+
+</span>
+
+
+
+
+
+<h2 style="
+font-family:'Cinzel',serif;
+font-size:52px;
+margin-top:25px;">
+
+Steps To Stay Safe From Online Scams
+
+</h2>
+
+
+
+
+<p style="
+max-width:850px;
+margin:25px auto;
+color:#cbd5e1;
+font-size:18px;
+line-height:2;">
+
+Following simple security practices can help you identify suspicious
+activities and maintain safer online habits.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:35px;">
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0b0b0b);
+padding:40px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<div style="font-size:55px;">
+01
+</div>
+
+
+
+<h3 style="
+color:#d4af37;
+margin:20px 0;">
+
+Check Information
+
+</h3>
+
+
+
+<p style="
+color:#cbd5e1;
+line-height:1.9;">
+
+
+Verify messages, websites, and offers before
+taking any action.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0b0b0b);
+padding:40px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<div style="font-size:55px;">
+02
+</div>
+
+
+
+<h3 style="
+color:#d4af37;
+margin:20px 0;">
+
+Avoid Suspicious Links
+
+</h3>
+
+
+
+<p style="
+color:#cbd5e1;
+line-height:1.9;">
+
+
+Do not open unknown links or download files
+from unverified sources.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0b0b0b);
+padding:40px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<div style="font-size:55px;">
+03
+</div>
+
+
+
+<h3 style="
+color:#d4af37;
+margin:20px 0;">
+
+Protect Accounts
+
+</h3>
+
+
+
+<p style="
+color:#cbd5e1;
+line-height:1.9;">
+
+
+Use strong passwords and additional security
+options whenever available.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0b0b0b);
+padding:40px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<div style="font-size:55px;">
+04
+</div>
+
+
+
+<h3 style="
+color:#d4af37;
+margin:20px 0;">
+
+Update Devices
+
+</h3>
+
+
+
+<p style="
+color:#cbd5e1;
+line-height:1.9;">
+
+
+Keep operating systems and applications updated
+for better security.
+
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ==========================================
+SECURITY CHECKLIST
+========================================== -->
+
+
+<section style="
+padding:120px 0;
+background:#111111;">
+
+
+
+<div class="container">
+
+
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+gap:65px;
+align-items:center;">
+
+
+
+
+
+<div>
+
+
+<h2 style="
+font-family:'Cinzel',serif;
+font-size:50px;
+margin-bottom:30px;">
+
+Online Scam Safety Checklist
+
+</h2>
+
+
+
+
+<p style="
+color:#cbd5e1;
+font-size:18px;
+line-height:2;
+margin-bottom:35px;">
+
+Use these simple checks before trusting websites,
+messages, downloads, or online requests.
+
+</p>
+
+
+
+
+
+
+<div style="
+display:flex;
+flex-direction:column;
+gap:22px;">
+
+
+
+
+
+<div style="
+display:flex;
+gap:15px;
+align-items:center;">
+
+
+<span style="
+width:45px;
+height:45px;
+background:#d4af37;
+color:#111;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:800;">
+
+✓
+
+</span>
+
+
+<p style="color:#e5e7eb;">
+
+Confirm website addresses carefully.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+display:flex;
+gap:15px;
+align-items:center;">
+
+
+<span style="
+width:45px;
+height:45px;
+background:#d4af37;
+color:#111;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:800;">
+
+✓
+
+</span>
+
+
+<p style="color:#e5e7eb;">
+
+Avoid sharing passwords or private data.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+display:flex;
+gap:15px;
+align-items:center;">
+
+
+<span style="
+width:45px;
+height:45px;
+background:#d4af37;
+color:#111;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:800;">
+
+✓
+
+</span>
+
+
+<p style="color:#e5e7eb;">
+
+Review permissions before installing apps.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div style="
+display:flex;
+gap:15px;
+align-items:center;">
+
+
+<span style="
+width:45px;
+height:45px;
+background:#d4af37;
+color:#111;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:800;">
+
+✓
+
+</span>
+
+
+<p style="color:#e5e7eb;">
+
+Stay updated about new scam methods.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<div style="
+padding:65px;
+border-radius:35px;
+background:linear-gradient(135deg,#d4af37,#ffcc66);
+color:#111;">
+
+
+
+<h2 style="
+font-family:'Cinzel',serif;
+font-size:42px;
+margin-bottom:25px;">
+
+Need Assistance?
+
+</h2>
+
+
+
+
+<p style="
+font-size:18px;
+line-height:2;
+margin-bottom:35px;">
+
+
+Get general guidance and support related to
+online safety awareness and security practices.
+
+
+</p>
+
+
+
+
+<a href="https://getchatsupport.net/"
+target="_blank"
+style="
+display:inline-block;
+padding:18px 45px;
+background:#090909;
+color:#ffffff;
+font-weight:800;
+border-radius:50px;
+text-decoration:none;">
+
+Visit Support
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- ========= PART 3 STARTS HERE ========= -->
+<!-- ==========================================
+PART 3 : FAQ • CTA • FOOTER
+Paste below Part 2
+========================================== -->
+
+
+<section style="padding:120px 0;background:#090909;" id="faq">
+
+
+<div class="container">
+
+
+<div style="
+text-align:center;
+margin-bottom:80px;">
+
+
+<span style="
+display:inline-block;
+padding:10px 25px;
+border-radius:50px;
+background:rgba(212,175,55,.12);
+border:1px solid rgba(212,175,55,.30);
+color:#d4af37;
+font-weight:700;">
+
+FAQ CENTER
+
+</span>
+
+
+
+
+<h2 style="
+font-family:'Cinzel',serif;
+font-size:52px;
+margin-top:25px;">
+
+Frequently Asked Questions
+
+</h2>
+
+
+
+
+<p style="
+max-width:850px;
+margin:25px auto;
+color:#cbd5e1;
+font-size:18px;
+line-height:2;">
+
+Learn how to recognize suspicious activity,
+improve security awareness, and follow safer online practices.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+gap:35px;">
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0b0b0b);
+padding:38px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<h3 style="color:#d4af37;">
+
+How can I identify a suspicious message?
+
+</h3>
+
+
+<p style="
+margin-top:18px;
+color:#cbd5e1;
+line-height:1.9;">
+
+Look for unusual requests, urgent language,
+unknown senders, and links that do not match trusted websites.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0b0b0b);
+padding:38px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<h3 style="color:#d4af37;">
+
+What should I do before downloading software?
+
+</h3>
+
+
+<p style="
+margin-top:18px;
+color:#cbd5e1;
+line-height:1.9;">
+
+Verify the source, review permissions, and make sure the
+download comes from a trusted provider.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0b0b0b);
+padding:38px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<h3 style="color:#d4af37;">
+
+Why do scammers use urgency?
+
+</h3>
+
+
+<p style="
+margin-top:18px;
+color:#cbd5e1;
+line-height:1.9;">
+
+Creating pressure can make people act quickly without
+checking important details.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div style="
+background:linear-gradient(145deg,#171717,#0b0b0b);
+padding:38px;
+border-radius:30px;
+border:1px solid rgba(212,175,55,.20);">
+
+
+<h3 style="color:#d4af37;">
+
+How can I improve my online safety?
+
+</h3>
+
+
+<p style="
+margin-top:18px;
+color:#cbd5e1;
+line-height:1.9;">
+
+Use strong passwords, keep software updated,
+and stay informed about common online risks.
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ==========================================
+FINAL SUPPORT CTA
+========================================== -->
+
+
+<section style="
+padding:120px 0;
+background:linear-gradient(135deg,#d4af37,#ffcc66);">
+
+
+
+<div class="container">
+
+
+
+<div style="
+background:rgba(0,0,0,.15);
+padding:75px 50px;
+border-radius:40px;
+text-align:center;
+backdrop-filter:blur(15px);">
+
+
+
+<h2 style="
+font-family:'Cinzel',serif;
+font-size:55px;
+color:#090909;">
+
+Stay Aware. Stay Protected.
+
+</h2>
+
+
+
+
+<p style="
+max-width:850px;
+margin:30px auto;
+font-size:19px;
+line-height:2;
+color:#111;">
+
+
+Get general assistance and guidance about online safety,
+security awareness, and protecting your digital information.
+
+</p>
+
+
+
+
+<a href="https://getchatsupport.net/"
+target="_blank"
+style="
+display:inline-block;
+padding:20px 60px;
+background:#090909;
+color:#ffffff;
+border-radius:60px;
+font-size:20px;
+font-weight:800;
+text-decoration:none;">
+
+Get Support
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ==========================================
+FOOTER
+========================================== -->
+
+
+<footer style="
+background:#050505;
+padding:90px 0 35px;">
+
+
+
+<div class="container">
+
+
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:45px;">
+
+
+
+
+
+<div>
+
+
+<h2 style="
+font-family:'Cinzel',serif;
+font-size:36px;
+color:#d4af37;">
+
+Cyber<span style="color:#ffffff;">
+Shield
+</span>
+
+</h2>
+
+
+
+<p style="
+margin-top:25px;
+color:#94a3b8;
+line-height:2;">
+
+A cybersecurity awareness website focused on
+safe online practices and scam prevention education.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#d4af37;
+margin-bottom:20px;">
+
+Quick Links
+
+</h3>
+
+
+<p>
+<a href="#" style="color:#cbd5e1;text-decoration:none;">
+Home
+</a>
+</p>
+
+
+<p>
+<a href="#features" style="color:#cbd5e1;text-decoration:none;">
+Protection
+</a>
+</p>
+
+
+<p>
+<a href="#faq" style="color:#cbd5e1;text-decoration:none;">
+FAQ
+</a>
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#d4af37;
+margin-bottom:20px;">
+
+Safety Tips
+
+</h3>
+
+
+<ul style="
+list-style:none;
+color:#cbd5e1;
+line-height:2;">
+
+
+<li>✔ Verify information</li>
+
+<li>✔ Avoid unknown links</li>
+
+<li>✔ Protect accounts</li>
+
+<li>✔ Update devices</li>
+
+<li>✔ Stay informed</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#d4af37;
+margin-bottom:20px;">
+
+Support
+
+</h3>
+
+
+
+<p style="
+color:#94a3b8;
+line-height:1.9;">
+
+
+Need help? Visit our support page
+for general assistance.
+
+</p>
+
+
+
+
+<a href="https://getchatsupport.net/"
+target="_blank"
+style="
+display:inline-block;
+margin-top:25px;
+padding:15px 38px;
+background:linear-gradient(135deg,#d4af37,#ffcc66);
+color:#111;
+font-weight:800;
+border-radius:50px;
+text-decoration:none;">
+
+Support Center
+
+</a>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<hr style="
+margin:60px 0;
+border:none;
+height:1px;
+background:rgba(255,255,255,.12);">
+
+
+
+
+
+
+<div style="
+text-align:center;
+color:#64748b;
+line-height:2;">
+
+
+<p>
+© 2026 CyberShield. All Rights Reserved.
+</p>
+
+
+<p>
+This website provides general cybersecurity awareness information and is not affiliated with any specific software company or product.
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</footer>
+
+
+
+</body>
+
+</html>
